@@ -25,7 +25,7 @@ Acreditamos que cada pessoa tem seu próprio ritmo, sua própria história e seu
   // Animation refs for smooth scrolling
   const targetTimeRef = useRef(0);
   const currentTimeRef = useRef(0);
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number | undefined>(undefined);
 
   // Intersection Observer for text reveal animation
   useEffect(() => {

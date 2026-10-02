@@ -40,7 +40,7 @@ export default function AdminSidebar() {
     router.push("/admin/login");
   };
 
-  const SidebarContent = () => (
+  const renderSidebarContent = () => (
     <div className="flex flex-col h-full">
       {/* Logo */}
       <div className="px-6 py-6 border-b border-cream/10">
@@ -112,7 +112,7 @@ export default function AdminSidebar() {
         className="hidden lg:flex flex-col w-56 min-h-screen admin-sidebar flex-shrink-0"
         aria-label="Painel lateral administrativo"
       >
-        <SidebarContent />
+        {renderSidebarContent()}
       </aside>
 
       {/* Mobile trigger */}
@@ -148,7 +148,7 @@ export default function AdminSidebar() {
             >
               <X size={18} />
             </button>
-            <SidebarContent />
+            {renderSidebarContent()}
           </aside>
         </div>
       )}

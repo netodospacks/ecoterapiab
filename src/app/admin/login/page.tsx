@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import Link from "next/link";
 import { Eye, EyeOff, Lock, Mail, AlertCircle, Leaf } from "lucide-react";
 
 export default function AdminLoginPage() {
@@ -151,12 +152,12 @@ export default function AdminLoginPage() {
 
         {/* Back to site */}
         <div className="text-center mt-6">
-          <a
+          <Link
             href="/"
             className="font-sans text-sm text-text-medium hover:text-moss transition-colors"
           >
             ← Voltar ao site
-          </a>
+          </Link>
         </div>
       </div>
     </div>
