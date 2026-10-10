@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
+import { Outfit, Inter, Fredoka } from "next/font/google";
 import "./globals.css";
+
+const glikerFallback = Fredoka({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fredoka",
+  display: "swap",
+});
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -73,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${outfit.variable} ${inter.variable}`}>
+    <html lang="pt-BR" className={`${glikerFallback.variable} ${outfit.variable} ${inter.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#53664B" />

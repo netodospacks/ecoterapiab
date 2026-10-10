@@ -9,6 +9,8 @@ export default function AdminConteudoPage() {
   const [heroSubtitle, setHeroSubtitle] = useState(defaultConfig.heroSubtitle);
   const [historiaTitle, setHistoriaTitle] = useState(defaultConfig.historiaTitle);
   const [historiaText, setHistoriaText] = useState(defaultConfig.historiaText);
+  const [ecoterapiaTitle, setEcoterapiaTitle] = useState(defaultConfig.ecoterapiaTitle);
+  const [ecoterapiaSubtitle, setEcoterapiaSubtitle] = useState(defaultConfig.ecoterapiaSubtitle);
   const [missao, setMissao] = useState(defaultConfig.missao);
   const [visao, setVisao] = useState(defaultConfig.visao);
   const [saved, setSaved] = useState(false);
@@ -116,6 +118,40 @@ export default function AdminConteudoPage() {
                 value={historiaText}
                 onChange={(e) => setHistoriaText(e.target.value)}
                 className="w-full px-4 py-3 border-2 border-sand rounded-xl font-sans text-sm focus:outline-none focus:border-moss transition-colors resize-y"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Equoterapia */}
+        <div className="admin-card">
+          <h2 className="font-sans font-semibold text-text-dark mb-4 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#6A3D12]" aria-hidden="true" />
+            Equoterapia (Terceira parte)
+          </h2>
+          <div className="space-y-4">
+            <div>
+              <label htmlFor="ecoterapia-title" className="block font-sans text-sm font-medium text-text-dark mb-1.5">
+                Título
+              </label>
+              <textarea
+                id="ecoterapia-title"
+                rows={2}
+                value={ecoterapiaTitle}
+                onChange={(e) => setEcoterapiaTitle(e.target.value)}
+                className="w-full px-4 py-3 border-2 border-sand rounded-xl font-sans text-sm focus:outline-none focus:border-moss transition-colors resize-none"
+              />
+            </div>
+            <div>
+              <label htmlFor="ecoterapia-subtitle" className="block font-sans text-sm font-medium text-text-dark mb-1.5">
+                Subtítulo
+              </label>
+              <textarea
+                id="ecoterapia-subtitle"
+                rows={3}
+                value={ecoterapiaSubtitle}
+                onChange={(e) => setEcoterapiaSubtitle(e.target.value)}
+                className="w-full px-4 py-3 border-2 border-sand rounded-xl font-sans text-sm focus:outline-none focus:border-moss transition-colors resize-none"
               />
             </div>
           </div>

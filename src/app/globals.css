@@ -56,6 +56,35 @@
 }
 
 /* ============================================================
+   Custom Fonts (Gliker support with Google Font fallback)
+   ============================================================ */
+@font-face {
+  font-family: 'Gliker';
+  src: url('/fonts/gliker-bold.woff2') format('woff2'),
+       url('/fonts/gliker-bold.otf') format('opentype'),
+       url('/fonts/gliker-bold.ttf') format('truetype'),
+       url('/fonts/gliker.woff2') format('woff2'),
+       url('/fonts/gliker.otf') format('opentype'),
+       url('/fonts/gliker.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gliker';
+  src: url('/fonts/gliker-regular.woff2') format('woff2'),
+       url('/fonts/gliker-regular.otf') format('opentype'),
+       url('/fonts/gliker-regular.ttf') format('truetype'),
+       url('/fonts/gliker.woff2') format('woff2'),
+       url('/fonts/gliker.otf') format('opentype'),
+       url('/fonts/gliker.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
    Base Styles
    ============================================================ */
 html {
@@ -75,8 +104,9 @@ body {
    Custom Utilities
    ============================================================ */
 @layer utilities {
-  .font-display {
-    font-family: var(--font-outfit), system-ui, sans-serif;
+  .font-display,
+  .font-gliker {
+    font-family: 'Gliker', var(--font-fredoka), var(--font-outfit), system-ui, sans-serif;
   }
 
   .font-sans {

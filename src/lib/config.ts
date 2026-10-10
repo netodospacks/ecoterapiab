@@ -3,17 +3,20 @@
 
 export const defaultConfig = {
   // Hero
-  heroTitle: "Pequenos passos.\nGrandes transformações.",
+  heroTitle: "Onde o cuidado e a\nnatureza se unem para\ntransformar vidas!",
   heroSubtitle:
-    "Acreditamos no poder da conexão entre pessoas, cavalos e natureza para transformar vidas.",
+    "Um espaço de acolhimento, desenvolvimento e novas possibilidades por meio da conexão entre pessoas, cavalos e natureza.",
 
   // Nossa História
-  historiaTitle: "O Bem Viver Centro de Equoterapia e Terapias Integradas",
-  historiaText: `O Bem Viver Centro de Equoterapia e Terapias Integradas é uma instituição localizada na zona rural de Gurinhém, Paraíba, voltada ao desenvolvimento mental, motor e social de pessoas por meio da interação com cavalos.
+  historiaTitle: "O Centro de Equoterapia e Terapias Integradas Bem Viver",
+  historiaSubtitle: "Uma história construída com amor, cuidado e propósito.",
+  historiaText: `O Centro Bem Viver é uma instituição localizada na zona rural de Gurinhém, na Paraíba. Promovemos o desenvolvimento integral e a inclusão social de pessoas neuroatípicas por meio da Equoterapia e das Terapias Integradas.`,
 
-Filiado à ANDE-Brasil (Associação Nacional de Equoterapia), o centro realiza um trabalho focado no acolhimento de praticantes neurodivergentes (como pessoas com TEA) e com necessidades especiais.
 
-Por meio da ecoterapia, buscamos oferecer experiências que valorizem o desenvolvimento, a autonomia, a confiança e o bem-estar.`,
+  // Equoterapia
+  ecoterapiaTitle: "O poder de conectar a natureza e a presença transformadora do cavalo.",
+  ecoterapiaSubtitle:
+    "A Equoterapia combina o ambiente natural e o vínculo com os cavalos como recursos terapêuticos, promovendo o desenvolvimento integral de forma acolhedora, humana e personalizada.",
 
   // Missão / Visão / Valores
   missao:
